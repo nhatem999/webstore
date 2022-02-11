@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            //Thay đổi dữ liệu cho đối tượng nào? => P (selector)
+            // Thay dổi cái gì? => text (method text jquery)
+            // $('p').text('Im Minh Nhật!');
+            // $('p.first-name').text('Hoàng VŨ Minh');
+            // $('p.last-name').text('Nhật');
+            $('p .first-name').text('Hoàng Vũ Minh ');
+            $('p .last-name').text('Nhật');
+        });
+    </script>
+<p>Dữ liệu ban đầu</p>
+<!-- <p class="first-name">Họ ....</p>
+<p class="last-name">Tên....</p> -->
+<p>Họ : <span class="first-name"></span></p>
+<p>Tên: <span class="last-name"></span></p>
+</body>
+</html>

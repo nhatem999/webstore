@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo cấu trúc cấp bậc</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        form input{
+            display: block;
+            margin: 10px 0px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // 1.Toàn bộ menu cấp 1 => màu đỏ
+            $("#main-menu>li>a").css('color','red');
+            // 2.Toàn bộ menu màu =>gold
+            $("#main-menu a").css('color','gold');
+            // 4.In vào giá trị của input đẫ có lable nếu có lable phía trên
+            
+            // $("form label + input").val("đã có lable");
+            // 5.Toàn bộ những input phía sau lable có value " đứng sau lable"
+            $("form label ~ input").val("đứng sau lable");
+        });
+    </script>
+    <ul id="main-menu">
+        <li><a href="">Menu 1</a></li>
+        <li><a href="">Menu 2</a>
+        <ul class="sub-menu">
+            <li><a href="">Menu 2.1</a></li>
+            <li><a href="">Menu 2.2</a></li>
+            <li><a href="">Menu 2.3</a></li>
+        </ul></li>
+        <li><a href="">Menu 3</a></li>
+        <li><a href="">Menu 4</a></li>
+        <li><a href="">Menu 5</a></li>
+    </ul>
+    <form action="">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <label for="email">email</label>
+        <input type="text" name="email" id="mail">
+        <input type="text" name="email" id="mail">
+        <input type="text" name="email" id="mail">
+    </form>
+</body>
+
+</html>

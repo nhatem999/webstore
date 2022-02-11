@@ -1,0 +1,10 @@
+.text-center{
+    text-align: center;
+}
+.bg-azure{
+    background-color: azure;
+}
+.wp-content .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}

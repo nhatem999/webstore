@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nguyên tắc khung ảnh trong website</title>
+</head>
+
+<body>
+
+    <style>
+         .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+
+    .clearfix {
+        display: inline-block;
+    }
+
+    /* start commented backslash hack \*/
+    * html .clearfix {
+        height: 1%;
+    }
+
+    .clearfix {
+        display: block;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+        #wrapper {
+            width: 1080px;
+            margin: 0px auto;
+        }
+
+        #list-post li {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 20px;
+        }
+
+        #list-post li:nth-child(3n) {
+            margin-right: 0px;
+        }
+        #list-post .thumb{
+            width: 350px;
+            height: 197px;
+        }
+        .thumb{overflow: hidden;}
+        a{display: block;}
+        .thumb img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul{list-style: none;}
+        
+
+    </style>
+    <div id="wrapper">
+        <ul id="list-post" class="clearfix">
+            <li>
+                <a href="" class="thumb">
+                    <img src="images-1/2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" class="thumb">
+                    <img src="images-1/2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" class="thumb">
+                    <img src="images-1/2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" class="thumb">
+                    <img src="images-1/2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" class="thumb">
+                    <img src="images-1/2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" class="thumb">
+                    <img src="images-1/e.jpg" alt="">
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>

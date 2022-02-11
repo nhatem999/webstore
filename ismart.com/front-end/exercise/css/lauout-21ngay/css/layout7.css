@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container-full{
+    width: 100%;
+    display: flex;
+
+
+}
+/* ============header============== */
+#header{
+    background-color: #0073aa;
+    flex: 100%;
+}
+#header h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0px;
+    flex: 100%;
+}
+/* =================content=========== */
+#wp-content{
+    min-height: 600px;
+    background-color: #e1e1e1;
+}
+#sidebar-1{
+    order: -1;
+    flex: 20%;
+}
+#sidebar-2{
+    flex: 20%;order: 2;
+}
+#content{
+    flex: 60%;
+    background-color: #ffffff;
+}
+/* =================footer============= */
+#footer{
+    background-color: #232323;
+    flex: 100%;
+}
+#footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5.2px 0px;
+    color: #ffffff;
+    margin: 0px;
+    flex: 100%;
+
+}
+

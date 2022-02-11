@@ -1,0 +1,31 @@
+/*STYLE*/
+@import '../public/css/import/fonts.css';
+@import '../public/css/import/global.css';
+@import '../public/css/import/list_post.css';
+@import '../public/css/import/list_product.css';
+@import '../public/css/import/add_cat.css';
+@import '../public/css/import/info_account.css';
+@import '../public/css/import/change_pass.css';
+@import '../public/css/import/sidebar.css';
+@import '../public/css/import/menu.css';
+@import '../public/css/import/detail_order.css';
+.error{
+    color:red;
+}
+p.success-pass{
+    color:green;
+}
+ul.pagging{
+    padding: 0px 454px;
+}
+#detail-page{
+    min-height: 400px;
+}
+
+li.active a{
+    /* border:1px solid red; */
+    color:red !important;
+}
+.green{
+    color:green !important;
+}

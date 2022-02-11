@@ -1,0 +1,65 @@
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+}
+.bg-green{
+    background-color: green;
+    color: #ffffff
+}
+#header p{
+    
+    padding: 15px 0px;
+    
+}
+.fl-left{
+    float: left;
+}
+.fl-right{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+
+.content{
+    width: 600px;
+    min-height: 596px;
+    background-color:#f3f3f3;
+
+}
+.sidebar{
+    width: 360px;
+    min-height: 596px;
+    background-color: #807c7c;
+}
+.pd-10{
+    padding: 10px;
+}
+#footer p{
+    padding: 10px 0px;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}

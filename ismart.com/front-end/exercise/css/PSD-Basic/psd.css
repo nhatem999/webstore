@@ -1,0 +1,146 @@
+h1{
+    text-transform: uppercase;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    background: #ffffff;
+    font-size: 14px;
+    color: #444444;
+    font-weight:400 ;
+}
+/* style header */
+#header{
+    height: 80px;
+    background: #009999;
+    margin-bottom: 20px;
+}
+
+ul#main-menu li{
+    float:left ;
+}
+ul#main-menu li a{
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 25px 20px;
+    color: #ffffff;
+    display: block;
+    line-height: 30px;
+}
+#logo{
+    display: block;
+    padding-top: 10px;
+}
+/* Style wp-content */
+#wp-content{
+    
+    padding-top:30px;
+    padding-bottom:30px;
+    background: #fbfbfb;
+    display: block;
+    min-height: 596px;
+
+}
+/* style content */
+#content{
+    width: 874px; 
+    color:#565656 ;
+    min-height: 596px;
+    border-right: 1px solid #ededed;
+    /* padding: 0px 28px 0px 30px; */
+}
+h1.post-title,#sidebar .widget .widget-head h4{
+    font-size: 23px;
+    color: #333333;
+    line-height: 30px;
+    padding: 13px 0px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.post-detail p{
+    margin-bottom: 15px;
+}
+ #content .post-detail{
+    min-height: 596px;
+    padding: 0px 15px 0px 15px;
+
+ 
+}
+/* style sidebar */
+#sidebar{
+    width: 295px;
+
+}
+#sidebar .widget-head{
+    padding-left: 36px;
+}
+
+#sidebar>a{
+  
+    line-height: 41px;
+}
+#sidebar ul li a{
+    font-size: 14px;
+    line-height: 35px;
+    text-decoration: none;
+    display: block;  
+    position: relative; 
+    color:#565656 ;
+    padding: 0px 36px 0px ;
+}
+
+#sidebar ul li a::before{
+    font-family:FontAwesome;
+    content: "\f105";
+    left: 22px;
+    font-size: 16px;
+    position: absolute;
+}
+#sidebar ul li:hover>a{
+    color: #56afaf;
+}
+
+#main-menu .active{
+    background: #f0f0f0;
+    
+}
+#main-menu .active>a{
+    display: block;
+    color: black;
+}
+#footer{
+    padding: 42px 0px 52px 0px;
+    background: #333333;
+    color: #e3e3e3;
+}
+#footer .widget-head h4{
+    font-size: 21px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 2px 0px;
+    margin-bottom: 10px;
+}
+#footer .widget-detail p{
+    line-height: 30px;
+}
+#footer ul.list-course li a{
+    font-size: 13px;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    color: #e3e3e3;
+}
+/* style copyright */
+#copyright{
+    padding: 8px 0px;
+    background: #404040;
+
+}
+#copyright p{
+    font-size: 13px;
+    line-height: 30px;
+    color: #e3e3e3;
+}

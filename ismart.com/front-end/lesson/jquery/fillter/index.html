@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phương thức tìm kiếm và lọc</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            //eq
+            // $('p').eq(2).css('color','red');
+            //not
+            // $('p').not('.highlight').css('background','yellow');
+            // filter
+            // $('p').filter('.highlight').css('color','blue');
+            //next
+            // $('p').filter('.highlight').next().css('color','blue');
+            //nextAll
+            //  $('p').filter('.highlight').nextAll().css('color','blue');
+            //  $('p').eq(2).nextAll('.highlight').css('color','blue');
+            //pre
+            //  $('p').eq(3).prevAll('.highlight').css('color','blue');
+            // is
+            // $('p').click(function(){
+            //    if($(this).is('.highlight')){
+            //        alert('Highlight');
+            //    }
+            // });
+                //  children , find
+                // $("#main-menu li").click(function(){
+                //     $(this).children('.sub-menu').show();
+                //     $(this).children('.sub-menu').find('a').css('color','red');
+                //     return false;
+                // });
+                    // parent , parents
+                $("#main-menu a").click(function(){
+                    // $(this).children('.sub-menu').show();
+                    // $(this).parent('li').parent('ul').css('background','gold');
+                    $(this).parents('ul').css('border','1px dotted #f00');
+                    return false;
+                });
+
+        });
+    </script>
+    <!-- <style>
+        .highlight{
+            color: red;
+        }
+    </style>
+    <p>Đoạn văn 1</p>
+    <p class="highlight">Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p class="highlight">Đoạn văn 5</p>
+    <p>Đoạn văn 6</p> -->
+    <style>
+        /* ul.sub-menu{
+            display: none;
+        } */
+    </style>
+    <ul id="main-menu">
+        <li><a href="">Menu 1</a></li>
+        <li><a href="">Menu 2</a>
+            <ul class="sub-menu">
+                <li><a href="">Menu 2.1</a></li>
+                <li><a href="">Menu 2.2</a></li>
+                <li><a href="">Menu 2.3</a></li>
+                <li><a href="">Menu 2.4</a></li>
+            </ul>
+        </li>
+        <li><a href="">Menu 3</a></li>
+        <li><a href="">Menu 4</a>
+            <ul class="sub-menu">
+                <li><a href="">Menu 4.1</a></li>
+                <li><a href="">Menu 4.2</a></li>
+                <li><a href="">Menu 4.3</a></li>
+                <li><a href="">Menu 4.4</a></li>
+            </ul>
+        </li>
+        <li><a href="">Menu 5</a></li>
+        <li><a href="">Menu 6</a></li>
+    </ul>
+</body>
+
+</html>

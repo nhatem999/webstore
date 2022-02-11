@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiệu Ứng Fade</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        #box {
+            width: 400px;
+            background: #2ecc71;
+            padding: 40px;
+            text-align: center;
+            color: #ffffff;
+            display: none;
+
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#effect-fadeIn").click(function(){
+                $("#box").fadeIn(1000);
+                  return false;
+            });
+            $("#effect-fadeOut").click(function(){
+                $("#box").fadeOut(1000);
+                 return false;
+            });
+            $("#effect-fadeToggle").click(function(){
+                $("#box").fadeToggle(1000);
+                return false;
+             
+            });
+        
+        });
+    </script>
+
+    <h1>Hiệu ứng Fade</h1>
+    <a href="" id="effect-fadeIn">FadeIn</a>
+    <a href="" id="effect-fadeOut">FadeOut</a>
+    <a href="" id="effect-fadeToggle">fade-Toggle</a>
+    <div id="box">BOX</div>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nulla voluptatibus saepe blanditiis culpa esse
+        perferendis? Necessitatibus ad eveniet mollitia ullam sequi cum eius repellat atque modi, cumque praesentium
+        quam voluptates totam dolorum velit error nemo ex delectus dignissimos quibusdam nobis doloribus doloremque
+        nostrum? Illo, dolore delectus. Expedita autem quo, nihil soluta at velit sit, quasi dignissimos consequatur
+        recusandae sequi quia. Laborum id, fuga nulla fugiat ipsum ex dolorem nihil?</p> -->
+</body>
+
+</html>

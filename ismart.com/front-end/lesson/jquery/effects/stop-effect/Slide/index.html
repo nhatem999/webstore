@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngăn chặn hàng đợi hiệu ứng</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        #box {
+            width: 400px;
+            background: #2ecc71;
+            padding: 40px;
+            text-align: center;
+            color: #ffffff;
+            display: none;
+
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#effect-slideUp").click(function(){
+                $("#box").stop().slideUp(1000);
+                  return false;
+            });
+            $("#effect-slideDown").click(function(){
+                $("#box").slideDown(1000);
+                 return false;
+            });
+            $("#effect-slideToggle").click(function(){
+                $("#box").stop().slideToggle(1000);
+                return false;
+             
+            });
+        
+        });
+    </script>
+
+    <h1>Hiệu ứng Slide trong jquery</h1>
+    <a href="" id="effect-slideUp">SlideUP</a>
+    <a href="" id="effect-slideDown">SlideDown</a>
+    <a href="" id="effect-slideToggle">SlideToggle</a>
+    <div id="box">BOX</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nulla voluptatibus saepe blanditiis culpa esse
+        perferendis? Necessitatibus ad eveniet mollitia ullam sequi cum eius repellat atque modi, cumque praesentium
+        quam voluptates totam dolorum velit error nemo ex delectus dignissimos quibusdam nobis doloribus doloremque
+        nostrum? Illo, dolore delectus. Expedita autem quo, nihil soluta at velit sit, quasi dignissimos consequatur
+        recusandae sequi quia. Laborum id, fuga nulla fugiat ipsum ex dolorem nihil?</p>
+</body>
+
+</html>

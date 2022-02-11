@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Check(n,k){
+        var tich=1;
+        for(var i=1 ; i<=n; i++){
+            if(i%k==0){
+                tich*=i;
+            }
+        
+        }
+        return tich;
+    }
+    function checkNT(k){
+        for(var i =2 ;i<=k;i++){
+         if((k%i!=0) || k==2) return true;
+         return false;
+        }   
+    }
+    function SumNT(n){
+        var sum=0;
+        for(var i=2;i<=n;i++){
+            if(checkNT(i)){
+                sum+=i;
+            }
+        }
+        return sum;
+    }
+    document.write("Tổng các só Nguyên tố là :"+ SumNT(3));
+    // document.write(checkNT(10));
+    // document.write(Check(10,2));
+</script>
+</body>
+</html>

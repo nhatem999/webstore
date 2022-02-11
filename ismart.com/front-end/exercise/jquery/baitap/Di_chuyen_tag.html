@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Học web chuẩn</title>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+  $(function(){
+    /* Code viết ở đây ↓ */
+    $("#change").click(function(){
+        var change = $(".list li").last();
+        $(".list").prepend(change);
+
+    });
+  });
+</script>
+</head>
+
+<body>
+<ul class="list">
+  <li>item 01</li>
+  <li>item 02</li>
+  <li>item 03</li>
+  <li>item 04</li>
+  <li>item 05</li>
+  <li>item 06</li>
+  <li>item 07</li>
+</ul>
+<button type="button" id="change">Change</button>
+</body>
+</html>

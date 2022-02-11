@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/grid-basic.css">
+  <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+  <title>Cấu trúc modal</title>
+</head>
+
+<body>
+  <style>
+    #demo-modal {
+      display: none;
+    }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Modal trong bootstrap</h1>
+        <!-- Kích hoạt modal -->
+        <button class="btn btn-primary" data-toggle="modal" data-target="#demo-modal">Show Modal</button>
+        <!-- Cấu trúc modal -->
+        <a href="" id="run-modal">Run modal</a>
+        <div class="modal fade" id="demo-modal" data-toggle="modal toggle">
+          <div class="modal-dialog modal-dialog-scrollable ">
+            <!-- modal-dialog-centered canh giữa màn hình -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5>Demo modal</h5>
+                <button class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              <!-- end modal header -->
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 mb-3"><div class="bg-primary">col-12</div></div>
+                    <div class="col-6"><div class="bg-secondary">col-6</div></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end modal body -->
+              <div class="modal-footer">
+                <button class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Lưu</button>
+              </div>
+              <!-- end modal footer -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        // $("#demo-modal").modal();//show modal lên khi reload
+        $("#run-modal").click(function(){
+          $("#demo-modal").modal(); 
+          return false;
+        });
+        // $("#demo-modal").on('show.bs.modal', function(){
+        //   alert("Show Modal");
+        // }); show xong rồi mới hiện thị modal
+        // $("#demo-modal").on('shown.bs.modal', function(){
+        //   alert("Show Modal");
+        // }); Hiện thị modal rôi mới show
+        // $("#demo-modal").on('hide.bs.modal',function(){
+        //   alert("Hide");
+        // }); hiện thị khi đóng
+        // $("#demo-modal").on('hidden.bs.modal',function(){
+        //   alert("Hide");
+        // }); đóng xong hoàn tất mới hiện thị
+      }); 
+    </script>
+  <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+ 
+</body>
+
+</html>

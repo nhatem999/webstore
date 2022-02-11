@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo định vị</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // 1. chọn phần tử p cố chỉ số 1 => màu đỏ
+            // $("a:eq(1)").css('color', 'red');
+            // // 2.Chọn phần tử p đầu tiên => màu đỏ
+            // $("p:first").css('color', 'red');
+            // // 3.Chọn phần tử p CUỐI CÙNG => màu đỏ
+            // $("p:last").css('color', 'red');
+            // // 4. chọn phần tử p có chỉ số lớn hơn 1 = > màu đỏ
+            // $("p:gt(1)").css('color','gold');
+            // // 5. chọn phần tử có chỉ số bé hơn 1
+            // $("p:lt(3)").css('color','gray');
+            // // 6.chọn phần tử có chỉ so lẻ = > màu đỏ
+            // $("p:odd").css('color','red');
+            // // 7.Chọn phần tử có chỉ số chẵn = > màu gold
+            // $("p:even").css('color','gold');
+            // 8.Chọn tất cả các phần tử p ngoài  trừ chỉ số 2 => màu đỏ
+            // $("p:not('p.p4')").css('color','red');
+        });
+    </script>
+    <p>Đoạn văn 0</p>
+    <p>Đoạn văn 1</p>
+    <p >Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p class="p4">Đoạn văn 5</p>
+    <p>Đoạn văn 6</p>
+    <a href="">link 1</a>
+    <a href="">link 1</a>
+</body>
+
+</html>

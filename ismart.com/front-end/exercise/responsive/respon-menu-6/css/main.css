@@ -1,0 +1,121 @@
+body{
+    font-family: arial;
+    
+    line-height: 23px;
+}
+#site{
+    position: relative;
+    overflow: hidden;
+}
+#wrapper{
+    position: relative;
+    width: 960px;
+    margin: 0px auto;
+    right: 0px;
+    transition: right 0.25s;
+}
+#header{
+    background-color: gray;
+    position: relative;
+}
+#logo{
+    /* float: left; */
+    text-align: center;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 18px 21px;
+    font-size: 20px;
+
+}
+#wp-respon-menu{
+    position: absolute;
+    top: 0px;
+    width: 250px;
+    right: -250px;
+    background: #333333;
+    height: 100%;
+     /* display: none; */
+     transition: right 0.25s;
+}
+#wp-respon-menu h2{
+    font-size: 20px;
+    color: #f5f5f5;
+    text-align: center;
+    display: inline-block;
+}
+#respon-head{
+    position: relative;
+}
+#icon-menu-responsive{
+    position: absolute;
+    top: 21px;
+    left: -22px;
+    display: none;
+    color: honeydew;
+    font-size: 18px;
+    text-decoration: none;
+}
+ul#respon-menu{
+    /* margin-left: 20px; */
+    padding: 0px;
+    list-style: none;
+   
+
+}
+ul#respon-menu li{
+    margin-top: 5px;
+    border-bottom: 1px solid #333333;
+
+}
+ul#respon-menu li a{
+    display: block;
+    padding: 5px 25px;
+    text-decoration: none;
+    color: cornsilk;
+    border-top: 1px solid grey
+}
+ul#main-menu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#main-menu li{
+    float: left;
+}
+ul#main-menu li a{
+    padding: 18px 21px;
+    display: block;
+    color: honeydew;
+    text-decoration: none;
+    
+}
+
+#content{
+    float: left;
+    width: 70%;
+    min-height: 600px;
+    color: violet;
+    background-color:#f5f5f5;
+}
+#sidebar{
+    float: right;
+    width: 30%;
+    min-height: 600px;
+    color: teal;
+    background: antiquewhite;
+}
+#footer{
+    padding: 5px;
+    text-align: center;
+    background-color: gray ;
+}
+/* #site.open-respon-menu #wrapper{
+    left: 250px;
+    transition: left 0.25s;
+} */
+#site.open-respon-menu #wp-respon-menu{
+    right: 0px;
+    transition: right 0.25s;
+}

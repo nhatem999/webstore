@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm Seclector cơ bản</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <!-- 
+        1.Thiết lập text có màu đỏ
+        2.Thiết lập các box có css (width: 200px ,height: 100px; margin: 20px, border: 1px solid #333)
+        3.Thiết lập box1 có background : black;
+        4.Thiết lập box2, Box3 có background : gold
+     -->
+     <script>
+         $(document).ready(function(){
+            $('p').css('color','red');
+            $('div.box').css('width','200px','height','100px');
+         });
+     </script>
+    <div id="box1" class="box">
+        <p>Nội dung khói 1</p>
+    </div>
+    <div id="box2" class="box">
+        <p>Nội dung khói 2</p>
+    </div>
+    <div id="box3" class="box">
+        <p>Nội dung khói 3</p>
+    </div>
+</body>
+</html>

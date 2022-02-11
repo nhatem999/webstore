@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slider_basic.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+    <script>
+     $(document).ready(function() {
+        //  Bước 1: Lấy src từ hình ảnh dược chọn
+        var src_img_click,src_img_first;
+       src_img_first= $("ul.list-thumb li:first-child img").attr('src');
+       $('ul.list-thumb li:first-child').addClass('active');
+        $("#show img").attr('src',src_img_first);
+        var myFnc =function(){
+
+            var elmLast = $('.list-thumb li').last();
+            $('.list-thumb').prepend(elmLast);
+        } 
+        setInterval(myFnc, 1000);
+        // $(".list-thumb li a").click(function(){
+        //     src_img_click = $(this).children('img').attr('src');
+        //     $("#show img").attr('src',src_img_click);
+        //     $(".list-thumb li").removeClass('active');
+        //     $(this).parent('li').addClass('active');         
+        //     return false;
+        // });
+        // $(".list-thumb li").change(function(){
+        //     src_img_click = $(this).children('a img').attr('src');
+        //     $("#show img").attr('src',src_img_click);
+        //     return false;
+
+        // });
+    });
+            //         var myFnc = function() {
+            //     var elmLast = $('.list li').last();
+            //     $('.list').prepend(elmLast);
+            // }
+            // setInterval(myFnc, 1000);
+            // });
+        // Bước 2: Gán src lấy được cho src của #show
+
+
+
+
+        //  var full;
+        //  $("ul.list-thumb li a img").click(function(){
+        //     full= $(this).attr('src');
+        //     $("#show img").attr('src',full);
+        //      return false;
+        //  });
+  
+    </script>
+
+    <div id="wrapper">
+       <h1>Basic Slider Product </h1>
+       <div id="wp-slider">
+           <div id="show">
+               <img src="images/thum-1.png" alt="">
+           </div>
+           <!-- end show -->
+       <div id="wp-list-thumb">
+        <ul class="list-thumb d-flex">
+            <li><a href=""><img src="images/thum-1.png" alt=""></a></li>
+            <li><a href=""><img src="images/thumb-2.png" alt=""></a> </li>
+            <li><a href=""><img src="images/thumb-3.png" alt=""></a></li>
+            <li> <a href=""><img src="images/thumb-4.png" alt=""></a></li>
+        </ul>
+       </div>
+       <!-- end wp-list-thumb -->
+    </div>
+       <!-- end  wp  slider -->
+    </div>
+</body>
+</html>

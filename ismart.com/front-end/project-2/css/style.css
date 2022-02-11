@@ -1,0 +1,365 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+body a{
+    display: block;
+    text-decoration: none;
+}
+/* body a:hover{
+    text-decoration: none;
+} */
+#header{
+    background-color: #23282d;
+    width: 100%;
+}
+#header .logo{
+    padding: 26px 0px 0px 0px;
+    display: block;
+    margin-left: 15px;
+}
+#search{
+    width: 247px;
+    margin-top: 26px;
+    position: relative;
+    margin-right: 15px;
+   
+}
+#search-frame{
+    width: 247px;
+    /* border-radius: 4px; */
+    border: 1px solid #131619;
+    position: relative;
+    background-color: #131619;
+    display: inline-block;
+    height: 40px;
+    color: #a2a1a1;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.icon{
+    position: absolute;
+    display: inline-block;
+    top: 6px;
+    right: 13px;
+    color: #a2a1a1;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+ul.main-menu{
+    float:left;
+    padding: 0px;
+    margin: 0px;
+
+}
+ul.main-menu li {
+  display: block;
+  float: left;
+  padding: 15px;
+  margin-right:15px;
+  
+}
+ul.main-menu li a{
+    color: #eeeeee;
+}
+.box{
+    width: 11px;
+    height: 38px;
+    background-color: #ff2d2d;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+ul.list-post{
+    list-style-type: none;
+}
+/*============ Style feature (NỘI BẬT )========== */
+.widget-feature{
+    width: 100%;
+    min-height: 350px;
+    margin-top: 34px;
+    margin-bottom: 30;
+}
+.widget-feature .widget-title a{
+    font-size: 16px;
+    width: 96px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #eeeeee;
+    padding: 3px 13px;
+    background-color: #23282d;
+    margin-left: 15px;
+}
+.widget-feature .widget-content{
+    width: 100%;
+    margin-bottom: 30px;
+ 
+}
+.widget-feature .widget-content .list-post{
+    padding: 0px;
+    margin: 0px;
+}
+
+.widget-feature .widget-content .list-post li{
+    float: left;
+    width: 390px;
+    padding: 0px 15px;
+    height: auto;
+}
+.widget-feature .widget-content .list-post li .post-thumb{
+    display: block;
+}
+.widget-feature .widget-content .list-post li .post-thumb img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.widget-feature .widget-content .list-post li .post-title{
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 16px;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+/* ==========container============ */
+.container{
+    display: flex;
+    width: 1140px;
+    margin: 0px auto;
+    flex-wrap: wrap;border-top: 1px solid #dadada;
+    padding-top: 22px;
+
+}
+.container .content{
+    flex: 765px;
+}
+.container .content .widget-new-post{
+    /* padding: 0px 15px; */
+    padding-right: 15px;
+}
+.container .content .widget-new-post .widget-title{
+    font-weight: 600;
+    font-size: 16px;
+    color: #f3f8fb;
+    text-transform: uppercase;
+    padding: 3px 13px;
+    background-color: #4db2ec;
+    width: 130px;
+}
+hr{
+    margin-top: 1px;
+    background-color: #4db2ec;
+}
+.container .content .widget-new-post .widget-content{
+    /* margin-top: 32px; */
+    margin-bottom: 80px;
+    border-top: 2px solid #4db2ec;
+    padding-top: 30px;
+}
+.container .content .widget-new-post .widget-content ul.list-post{
+    margin: 0px;
+    padding: 0px;
+}
+.container .content .widget-new-post .widget-content ul.list-post li{
+    margin-bottom: 35px;
+}
+.container .content .widget-new-post .widget-content ul.list-post li .post-thumb{
+    display: block;
+    float: left;
+    padding-right: 30px;
+}
+.container .content .widget-new-post .widget-content ul.list-post li .post-title{
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    color: #111111;
+}
+.container .content .widget-new-post .widget-content ul.list-post li .date{
+    font-weight: 600;
+    font-size: 11px;
+    padding: 5px 0px;
+    margin: 0px;  
+    color: #aaaaaa;
+}
+.container .content .widget-new-post .widget-content ul.list-post li .date b{
+    color: #131619;
+}
+.container .content .widget-new-post .widget-content ul.list-post li .post-desc{
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0px;
+    padding-right: 15px;
+    padding-top: 5px;
+    text-align: left;
+    color: #777777;
+}
+/* ===========Style sidebar========= */
+.container .sidebar{
+    flex: 375px;
+    padding-left: 15px;
+}
+.container .sidebar .ads{
+    width: 360px;
+    display: block;
+}
+.container .sidebar .ads img{
+    max-width: 360px;
+    height: auto;
+    display: block;
+}
+.sidebar .widget-theme{
+    margin-top: 40px;
+    padding-right: 15px;
+}
+.sidebar .widget-theme .widget-title{
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #ff2d2d;
+    width: 180px;
+    padding: 5px 15px;
+    color: #fcf2f2;
+}
+.sidebar .widget-theme .widget-content{
+    border-top: 1px solid #ff2d2d;
+    padding-top: 30px; 
+}
+.sidebar .widget-theme .widget-content ul{
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar .widget-theme .widget-content ul li{
+    margin-bottom: 15px;
+}
+.sidebar .widget-theme .widget-content ul li .name-category{
+    float: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: #212121;
+}
+.sidebar .widget-theme .widget-content ul li .post-number{
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 35px;
+    color: #212121;
+}
+/*==================== End sidebar =====================*/
+/*======================Footer===================  */
+#footer{
+    background-color: #2e2f30;
+    min-height: 282px;
+    color: #f6f6f6;
+}
+#footer .logo{
+    width: 210px;
+    padding: 0px 15px;
+    margin-top: 123px;
+    margin-right: 68px;
+}
+#footer .logo a{
+    display: block;
+}
+#footer .logo a img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+#footer .widget-about-us{
+    width: 517px;
+    padding: 0px 15px;
+    margin-top: 53px;
+}
+#footer .widget-about-us .widget-title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 42px;
+    text-transform: uppercase;
+}
+#footer .widget-about-us .widget-content p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px
+}
+#footer .widget-about-us .widget-content p a{
+    color: #49a5d9;
+}
+#footer .widget-follow{
+    width: 195px;
+    padding: 0px 15px;
+    margin-top: 53px;
+}
+#footer .widget-follow .widget-title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 42px;
+    text-transform: uppercase;
+}
+#footer .widget-follow .widget-content ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#footer .widget-follow .widget-content ul li{
+    float: left;
+    margin-right: 10px;
+   
+}
+#footer .widget-follow .widget-content ul li a i{
+    display: block;
+    font-size: 16px;
+    color: #eeeeee;
+    padding: 9px;
+    background-color: #434648;
+}
+.copy-right{
+    padding: 15px 0px;
+    background-color: #222527;
+    min-height: 45px;
+}
+.copy-right p{
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px 15px;
+}
+.copy-right ul{
+    margin: 0px;
+    padding: 0px 15px;
+    list-style: none;
+}
+.copy-right ul li{
+    float: left;
+    padding:0px 15px;
+
+}
+.copy-right ul li a{
+    display: block;
+    color: #f3f3f3;
+    font-size: 14px;
+    font-weight: 500;
+       
+}
+.main-menu li:hover a{
+    color: #4db2ec;
+    transition: 0.2s;
+}
+.content .widget-new-post .widget-content ul.list-post a.post-title:hover {
+    color: #4db2ec;
+}
+.sidebar .widget-theme .widget-content ul li:hover a{
+    color: #ff2d2d;
+}
+#footer .widget-follow .widget-content ul li:hover a i{
+    color: #4db2ec;
+}
+.copy-right ul li:hover a{
+    color: #4db2ec;
+}

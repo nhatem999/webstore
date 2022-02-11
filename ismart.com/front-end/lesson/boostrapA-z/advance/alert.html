@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <title>cảnh báo alert trong Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="co-md-12">
+                <h1>cảnh báo alert trong Bootstrap</h1>
+                <h3>Ẩn Alert</h3>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    My alert
+                    <button type="button" class="close" data-dismiss="alert" aria-lable="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <h3>Cấu trúc alert</h3>
+                <div class="alert alert-warning" role="alert">Cảnh báo đơn giản trong hệ thóng</div>
+                <h3>Alert Link</h3>
+                <div class="alert alert-warning" role="alert">Bạn đã thêm bài viết thành công , bạn click <a href="">vào
+                        đây</a> để trở về trang chủ</div>
+                <h3>Alert đa nội dung</h3>
+                <div id="myAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+                    <h4 class="alert-heading">Thông báo</h4>
+                    Bạn đã thêm bài viết thành công , bạn click <a href="">vào đây</a> để trở về trang chủ
+                    <p>Lorem ipsum dolor <strong>sit amet consectetur</strong> adipisicing elit. Placeat harum odio deleniti quisquam.
+                        Tempore veritatis aut qui ipsum, dolor esse animi odit obcaecati accusantium molestias incidunt
+                        optio at quasi tempori11bus recusandae odio? Rerum voluptatum, dignissimos enim aliquam ab tenetur
+                        nobis cum iusto veritatis earum, ullam temporibus, amet eveniet consequatur necessitatibus!
+                    </p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum odio deleniti quisquam.
+                        Tempore veritatis aut qui ipsum, dolor esse animi odit obcaecati accusantium molestias incidunt
+                        optio at quasi temporibus recusandae odio? Rerum voluptatum, dignissimos enim aliquam ab tenetur
+                        nobis cum iusto veritatis earum, ullam temporibus, amet eveniet consequatur necessitatibus!
+                    </p>
+                    <button type="button" class="close" data-dismiss="alert" aria-lable="Colse">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+               
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $("#myAlert").on('close.bs.alert',function(){
+                    alert("Đã ẩn alert");
+                });
+            });
+        </script>
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

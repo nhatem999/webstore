@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap-grid.min.css"
+  
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  <title>Bài tập 3: Hiển thị danh sách sản phẩm</title>
+</head>
+
+<body>
+  <style>
+    img{
+      width: 253px;
+      height: auto;
+    }
+    img:hover{
+    transform: rotate(2deg);
+    transition: all 0.5s;
+    }
+    .product-items{
+      border: 1px solid lightgray;
+      text-decoration:do;
+   
+    }
+    .product-items:hover{
+      border: 1px solid gray;
+    }
+    .product-items a{
+      display: block;
+    }
+    .price .price-old{
+      text-decoration:line-through;
+    }
+   
+    .order a{
+      padding: 3px;
+    border: 1px solid red;
+    display: inline-block;
+    color: red;
+    }
+    .order a:hover{
+      text-decoration: none;
+      color:orange;
+      border: 1px solid orange;
+      transition: all 0.25s;
+    }
+  
+    
+  </style>
+     <div class="header bg-dark text-center text-light p-3">
+       <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+           UNITOP ACADEMY
+          </div>
+        </div>
+       </div>
+     </div>
+       <!-- End Header -->
+
+       <div class="content">
+         <div class="container">
+          <div class="row">
+            
+            <div class="col-md-12 ">
+              <h2 class="ml-3 p-3">SHOP</h2>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/blackberry-key2-4-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3 ">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class="btn btn-outline-danger btn-sm px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>     
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/iphone-11-pro-256gb-black-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm " href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>      
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/iphone-11-pro-max-green-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/iphone-xs-max-256gb-white-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/iphone-xs-max-256gb-white-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/larmes-lm-tf004-bb61n-211-6nb-nam-1-1-600x600.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/pin-sac-du-phong-polymer-10000mah-lightning-esaver-add-1-600x600.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/samsung-galaxy-a31-055720-045750-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/samsung-galaxy-note-10-plus-blue-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/samsung-galaxy-s20-600x600-hong-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/larmes-lm-tf004-bb61n-211-6nb-nam-1-1-600x600.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+
+              </div>
+            </div>  
+            <div class="col-md-3 float-left mb-3">
+              <div class="product-items info text-center p-3">
+                <div class="product-thumb">
+                  <a class="mb-3" href="">
+                     <img class="img-fluid" src="images/iphone-xs-max-256gb-white-400x400.jpg" alt="">
+                    </a>
+                </div>
+                <div class="info text-primary mb-1">
+                  Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price mb-3">
+                  <span class="price-new mr-2 text-danger">500.000đ</span><span class="price-old text-secondary">700.000đ</span>
+                </div>
+                <div class="order ">
+                  <a class=" px-2 btn btn-outline-danger btn-sm" href="">Đặt Mua</a>
+                </div>
+              </div>
+            </div>     
+            </div>        
+            </div>
+          </div>
+         </div>
+       </div>
+       <!-- END content -->
+       <div class="footer bg-dark text-center text-light p-3">
+         <div class="container">  <div class="row">
+          <div class="col-md-12 text-warning">
+           UNITOP - HỌC ĐỂ DẪN ĐẦU
+          </div>
+        </div>
+      </div>
+      
+       </div>
+
+       
+     
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

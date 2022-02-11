@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        p:not(.active){
+            color: red;
+        }    
+       #wrapper :not(p){
+            background: seagreen;
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Not selector</h1>
+        <p>item 1</p>
+        <p class="active">item 2</p>
+        <p>item 3</p>
+        <p>item 4</p>
+        <a href="">link 1</a>
+        <a href="">link 2</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+#header{
+    background:#2bbc9b;
+    height: 86px;
+
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+}
+#main-menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 32px 28px;
+    display: block;
+    font-size: 20px;
+}
+
+#main-menu li{
+    float: left;
+    position: relative;
+    }
+
+#logo{
+    padding: 9.7px 0px;
+}
+#main-menu>li:hover,#main-menu .sub-menu>li:hover{
+    background: #24a085;
+}
+#main-menu li .sub-menu{
+    width: 240px;
+    background:#2bbc9b;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+}
+#main-menu .sub-menu li{
+    float: none;
+
+}
+
+#main-menu li .sub-menu li a{
+    padding: 16.4px 30px 18px;
+    border-top: 1px solid #ffffff;
+
+}
+#main-menu li .sub-menu li a::after{
+    font-family:FontAwesome;
+    content: "\f0da";
+    position: absolute;
+    right: 15px;
+    font-size: 16px;
+}
+
+#main-menu>li>.sub-menu{
+    top: 86px;
+    left: 0px;
+}
+#main-menu li:hover>.sub-menu{
+    display: block;
+}

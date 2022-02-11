@@ -1,0 +1,146 @@
+
+.container {
+    max-width: 1170px;
+}
+.hrr{
+    border-bottom: 1px solid #363636;
+}
+#header {
+    background-color: #000000;
+    color: honeydew;
+}
+.introduce p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size:14px;
+    padding:6px;
+   margin:0px;
+   color:#eeeeee;
+}
+.navbar,.navbar-var{
+    padding:0px;
+    margin:0px
+    /* border-top: 1px solid #363636; */
+}
+.collapse{
+    padding:0px;
+    margin:0px;
+}
+.navbar-brand{
+    padding:0px;
+    margin:0px;
+}
+.navbar-brand img{
+    display:block;
+    vertical-align: middle;
+    /* padding: 7px 12px; */
+    border: 1px solid #eeba81;
+
+}
+
+.navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.navbar-nav>li.nav-item>:hover>a.nav-link{
+    color: #e2524a;
+   
+}
+.navbar-nav>li.nav-item>a.nav-link:hover{
+    color: #e2524a;
+}
+.navbar-nav>li.nav-item:hover>.sub-menu{  
+    display:block;
+}
+.navbar-nav .nav-item .nav-link{
+    color: #ffff;
+}
+.navbar-nav li.nav-item{
+    float: left;
+    position: relative;
+   
+}
+.navbar-nav li.nav-item a.nav-link{
+    padding: 33px 20px;
+    font-size: 14px;
+    font-weight:600;
+    color:#ffff;
+}
+.navbar-nav .nav-item .sub-menu {
+    background: #f9f9f9;
+    position: absolute;
+    width: 197px;
+    top: 86.50px;
+    left: 18px;
+    display: none;
+    z-index: 10;
+    padding: 20px ;
+}
+.navbar-nav .nav-item .sub-menu li a{
+    text-decoration: none;
+    color: #5c5b5b;
+}
+.navbar-nav>.nav-item:hover>a,.navbar-nav .nav-item>.sub-menu>li:hover>a{
+    color: #e2524a;
+}
+/* .navbar-nav>li>.sub-menu{
+    top: 86px;
+    left:0px;
+} */
+.navbar-nav .nav-item .sub-menu li{
+    margin-bottom:5px ;
+    float: none;
+}
+.navbar-nav .nav-item .sub-menu li a {
+    font-size: 14px;
+    display:block;
+    line-height:25px;
+    position: relative;
+}
+.navbar .box{
+    text-align: center;
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    position: absolute;
+    top: 22px;
+    right: 0px;
+    background:#ff0000;
+}
+.navbar-dark .navbar-brand {
+    margin-right: 67px;
+}
+
+#content-slider {
+    height: 720px;
+
+}
+
+.carousel-caption {
+    width: 555px;
+    top: 235px;
+}
+.change-delivery{
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+.change-delivery i {
+    padding-top: 5px;
+    font-size: 47px;
+    padding-bottom: 5px;
+    /* margin-left: 62px; */
+    color: #888787;
+}
+
+.change-delivery p{
+    font-size: 16px;
+    color: #434141;
+}
+.card .extend{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.card .extend a{
+    background-color: #000000;
+}

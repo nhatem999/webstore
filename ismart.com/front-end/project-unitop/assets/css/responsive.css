@@ -1,0 +1,25 @@
+
+/* PC first */
+/* Ipad ngang (1024 x 768 ) */
+@media screen and (max-width: 1024px){
+    #wrapper{
+        width: 100%;
+    }
+    #content{
+        width: 70%;
+    }
+    #sidebar{
+        width: 30%;
+    }
+ 
+}
+/* Ipad dọc (768 x 1024) */
+@media screen and (max-width: 758px){
+ 
+}
+/* Tablet nhỏ (480 x 640) */
+@media screen and (max-width: 480px){
+    #content,#sidebar{
+        width: 100%;   
+    }}
+ 

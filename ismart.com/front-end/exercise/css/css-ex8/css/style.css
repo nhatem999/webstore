@@ -1,0 +1,101 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+   }
+   html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1{
+    margin: 35px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+
+}
+.container{
+    width: 960px;
+    margin: 0px auto;
+    min-height: 400px;
+}
+.list-product{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+.list-product li{
+    margin-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.product-item{
+    flex-basis: 33%;
+    position: relative;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+    height: 352px;
+}
+.product-item>a>img{
+    padding: 10px;
+}
+.product-item .price{
+    padding-top: 7px;
+    font-weight: bold;
+    color: rgb(238, 83, 27);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.product-item .product-name{
+    text-decoration: none;
+    color: rgb(73, 69, 69);
+    font-family: Arial, Helvetica, sans-serif;
+    display: block; 
+
+    padding: 18px 0px 10px 0px;
+}
+li .buy-now{
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    color: rgb(170, 38, 38);
+     padding: 10px;
+    background-color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    bottom: -50px;
+    transition: all 0.5s;
+}
+li:hover .product-item .buy-now{
+    bottom: 0px;
+    left: 0px;
+}
+li:hover .product-item>a>img{
+    transform:rotate(1deg) ;
+    transition: all 0.5s;
+}
+.discount{
+    position: absolute;
+  right: 0px;
+    top: 0px;
+}
+ul.list-product li .product-item:hover{
+    border: 1px solid orangered;
+}
+.text-center{
+    text-align: center;
+}

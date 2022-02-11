@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện click trong Jquery</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        #target{
+        display: inline-block;
+        padding: 20px;
+        background: gold;
+        color: #ffffff;
+        text-decoration: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a#target").hover(
+                // hover in
+                function(){
+                    // console.log("Hover in");
+                    $("a#target").css('padding','100px');
+                },
+                // hover out
+                function(){
+                    // console.log("HoVer out");
+                    $("a#target").css('padding','10px');
+                }
+            );
+        });
+    </script>
+
+    <h1>Sự kiện hover trong Jquery</h1>
+    
+    <a href="" id="target">#target</a>
+</body>
+
+</html>

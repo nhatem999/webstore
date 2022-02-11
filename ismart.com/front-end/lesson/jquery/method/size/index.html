@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm phương thức xử lý kích thước</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <style>
+        .box{
+            border: 1px solid #3333;
+            min-height: 100px;
+            width: 200px;
+            margin: 20px 0px;
+        }
+        #box-1{
+            padding: 10px 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            var height_box_1, inner_height_box_1, outer_height_box_1;
+            height_box_1 = $("#box-1").height();
+            inner_height_box_1=$("#box-1").innerHeight();
+            outer_height_box_1=$("#box-1").outerHeight();
+            console.log(height_box_1 +"-"+ inner_height_box_1 + "-"+outer_height_box_1);
+            var width_box_1, inner_width_box_1, outer_width_box_1;
+            width_box_1 = $("#box-1").width();
+            inner_width_box_1=$("#box-1").innerWidth();
+            outer_width_box_1=$("#box-1").outerWidth();
+            console.log(width_box_1 +"-"+ inner_width_box_1 + "-"+outer_width_box_1);
+            $('.box').height(height_box_1);
+
+        });
+    </script>
+    <h1>Phương thức xử lý kích thước trong jquery</h1>
+    <div class="box" id="box-1">
+        BOX 1
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda nihil itaque veniam veritatis obcaecati commodi fugit hic officiis, vero temporibus sed, natus accusamus quidem. Cupiditate harum aperiam nisi ab repudiandae optio vel? Ratione, enim. Fugiat tempora quos, distinctio incidunt nulla impedit veritatis? Odit in deserunt veniam at dolore? Laboriosam quasi quidem corrupti? Accusantium nostrum, maxime cum eaque ipsam perspiciatis in quam illo vitae minus harum reprehenderit minima et placeat aut aliquid officia aliquam aspernatur reiciendis vero corporis perferendis. Magni soluta aspernatur id dolorum earum asperiores, cupiditate cumque autem possimus quo, quae placeat eaque nisi? Ipsa recusandae distinctio odio consequatur voluptate?
+    </div>
+    <div class="box" id="box-2">
+        BOX 2
+    </div>
+    <div class="box" id="box-3">
+        BOX 3
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.style-grid [class^="col"]{
+    background-color: #cccccc;
+    border: 1px solid #333333;
+}
+
+/* .col-md-8{
+    background-color: gray;
+    min-height: 560px;
+}
+.col-md-4{
+    background-color: hotpink;
+    min-height: 560px;
+} */

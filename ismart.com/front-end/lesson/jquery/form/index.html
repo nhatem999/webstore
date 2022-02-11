@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector form</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+            // 1. Đếm số input trên form
+            // var num_input = $("form :input").length;
+            // // length đếm
+            // alert(num_input);
+            // 2.input past => backgroud red
+            $("form :text").css('background','red');
+     
+            // 3.đếm số phần tử select đẫ được chọn
+            // var input_select_selected = $("form :selected");
+            // input_select_selected.each(function(){
+            //     // each là duyêt cái phần tử mà chúng ta chọn
+            //     // this là từng cái phần tử mà chúng  ta chạy trên vòng lặp
+
+            //     alert($(this).text());
+            // });
+        
+            // var input_checkbox_checked= $("form .hobby:checked");
+            // input_checkbox_checked.each(function(){
+            //     alert($(this).val());
+            // })
+                // Phần tử disabled => boder red
+                $("form :disabled").css('border','1px solid red')
+                $("form :text").css('background','green');
+                $("form :input").css('border','1px solid gold');
+        });
+    </script>
+        <style>
+            form *{
+                display: block;
+                margin-bottom: 10px;
+            }
+    
+        </style>
+<form >
+    <input type="text" name="" value="nhat">
+    <input type="password" name="" disabled="disabled">
+    <input type="checkbox" class="hobby" value="shopping" checked="checked">
+    <input type="checkbox" class="hobby" value="game" checked="checked">
+    <input type="radio" name="">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>Nút bấm</button>
+    <input type="submit" name="">
+    <input type="file" name="">
+    <select name="" id="">
+        <option value="">Lựa chọn</option>
+        <option value="">Php</option>
+        <option selected="selected">jquery</option>
+    </select>
+</form>
+</body>
+
+</html>

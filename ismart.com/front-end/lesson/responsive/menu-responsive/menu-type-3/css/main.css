@@ -1,0 +1,133 @@
+body{
+    font-family: arial;
+    font-size: 13px;
+    line-height: 23px;
+    color: #333;
+}
+#site{
+  
+    position: relative;
+    overflow: hidden;
+}
+#wrapper{
+    transition: left 0.25s;
+    width: 960px;
+    margin: 0px auto;
+    left: 0px;
+    position: relative;
+    
+
+}
+#header{
+    position: relative;
+    text-align: center;
+}
+#header,#footer{
+    padding: 15px 10px;
+    background: gray;
+}
+#logo{
+    font-size: 20px;
+    color: honeydew;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px;
+    float: left;
+    text-align: center;
+}
+#icon-menu-responsive{
+    display: none;
+    color: #f5f5f5;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 21px;
+    cursor: pointer;
+}
+/* Style wp-respon-menu */
+#wp-respon-menu{
+     transition: left 0.25s;
+    /* display: none; */
+    background: #444444;
+    width: 250px;
+    color: #f5f5f5;
+    position: absolute;
+    top: 0px;
+    left: -250px;
+    height: 100%;
+  
+}
+#wp-respon-menu h2{
+    text-transform: uppercase;
+    text-align: center ;
+    margin: 0;
+    padding: 20px 0px;
+}
+/* Trạng thái khi bât menu add class open-respn-menu */
+#site.open-respon-menu #wrapper{
+    left: 250px;
+    transition: left 0.25s;
+}
+#site.open-respon-menu #wp-respon-menu{
+    left: 0px;
+    transition: left 0.25s;
+}
+/* end */
+ul#respon-menu{
+    width: 100%;
+    left: 0px;}
+
+ul#respon-menu li a{
+    color: #f5f5f5;
+    display: block;
+    padding: 5px 10px;
+    border-top: 1px solid rgb(141, 138, 138);
+    text-decoration: none;
+}
+ul#respon-menu li {
+    list-style: none;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+ul#main-menu li {
+    float: left;
+    list-style: none;
+}
+ul#main-menu li a{
+    color: aliceblue;
+    display: block;
+    text-decoration: none;
+    text-transform: none;
+    padding: 4px 18px;
+}
+
+ul#main-menu li:hover a{
+    text-decoration: underline;
+}
+#wp-content{
+    position: relative;
+    left: 0;
+}
+#content , #sidebar{
+    min-height: 600px;
+    position: relative;
+   
+
+}
+#content{
+    float: left;
+    background: #f5f5f5;
+    width:70% ;
+    min-height: 600px;
+}
+#sidebar{
+    width: 30%;
+    float: right;
+    background: #d5d5d5;
+    min-height: 600px;
+}
+

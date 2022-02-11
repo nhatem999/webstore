@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm phương thức xử lý tọa độ - khoảng cách</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 14px;
+            font-family: arial;
+            line-height: 25px;
+
+        }
+        #wrapper{
+            width: 960px;
+            margin: 0px auto;
+        }
+        #header, #footer{
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 20px 0px;
+        }
+        #content{
+            padding: 20px 0px;
+            position: relative;
+        }
+        #content p{
+            margin-bottom: 15px;
+        }
+        .widget{
+            width: 100px;
+            height: 50px;
+            background: #f5f5f5;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            // var window_scroll_top ,   window_scroll_left;
+            // $(window).scroll(function(){
+            //     window_scroll_top = $(window).scrollTop();
+            //     window_scroll_left=$(window).scrollLeft()
+
+            //     console.log(window_scroll_top+'---'+window_scroll_left);
+            // });
+            // var content_top =$('#content').offset();
+            // var footer_top = $('#footer').offset();
+
+            // console.log(footer_top);
+            var widget_top_content , widget_left_content ;
+            widget_top_content =$('.widget').position().top;
+            widget_left_content =$('.widget').position().left;
+            console.log(widget_top_content+'_'+widget_left_content);
+        });
+    </script>
+    <div id="wrapper">
+        <div id="header">
+            Header
+        </div>
+        <!-- end header -->
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque praesentium possimus quae esse officiis
+                aliquam nulla perspiciatis! A, aut quam quae qui deleniti minus cupiditate ratione architecto facilis
+                similique sed laborum officia quis fuga ipsum maiores numquam, modi exercitationem molestiae nesciunt ad
+                magnam corrupti cum labore. Quibusdam distinctio non provident enim illo numquam, unde velit eius
+                dolorum et officia libero optio iusto, officiis commodi rerum voluptatum consequatur. Distinctio vero
+                ipsam veniam mollitia culpa maxime, atque sequi. Dicta asperiores ratione optio, dolores eum eaque
+                obcaecati quam consequatur! Eius hic at facilis minus recusandae, labore excepturi enim magni! Dolores,
+                vero ab? Reprehenderit est doloremque reiciendis voluptate corporis suscipit nam debitis cumque
+                architecto officia consectetur explicabo, culpa eveniet nisi impedit harum porro ratione nesciunt qui
+                quod quasi fuga quam maiores? Dolorem repellendus harum, eos distinctio illo maiores iusto veniam
+                tempore repellat totam nihil obcaecati laborum natus dignissimos. Minus a obcaecati deleniti fuga
+                reprehenderit!</p>
+                <div class="widget">
+                    widget  
+                </div>
+            <p>Explicabo cum velit ex eveniet fugit illum maxime in sunt doloribus ea possimus deleniti saepe, itaque
+                ipsum aspernatur praesentium ducimus. Numquam harum nam tempore aut nisi expedita quaerat nemo,
+                obcaecati voluptatum eveniet sapiente placeat commodi rem perspiciatis deleniti accusantium! Incidunt
+                nemo officiis velit cum magnam illum autem rerum similique aperiam sapiente, quaerat molestias odit vel
+                accusantium? Ipsam, esse! Obcaecati nam ut eaque molestiae deserunt, deleniti tempore nihil est alias
+                modi eos in doloremque aliquid mollitia vitae debitis tenetur dolorum earum quae dolore quas odio ab?
+                Quae magni, vitae provident magnam ut, fugiat a iure earum, voluptatibus pariatur vero enim. Natus,
+                nihil, fugit, sequi porro perspiciatis quisquam tempore rem odio pariatur neque voluptatum totam
+                corrupti? Repellat illo rem officiis! Illum nam officia architecto maiores commodi earum dolor eum esse
+                perferendis molestiae voluptatum, quos eveniet natus sunt quia nemo numquam dolores ab reiciendis fuga
+                omnis odit. Optio ratione dolorem neque dolorum porro.</p>
+            <p>Illo, dignissimos repellendus sed sunt nobis qui praesentium? Amet magni ullam eius iure assumenda ut non
+                sunt temporibus enim rerum sapiente repudiandae, nobis nostrum vitae. Nulla nihil explicabo voluptate
+                deleniti, quia at suscipit vel nesciunt sed sapiente! Ducimus fugiat necessitatibus fugit quisquam neque
+                eligendi dolorem aliquid sint debitis? Facilis ipsam, iusto in quibusdam eos obcaecati. Aliquid beatae
+                atque ipsum culpa molestiae repellat eum, eveniet placeat aut est et suscipit minima magnam error quo
+                dignissimos, quis vel odio accusamus? Sed tempora corporis molestiae. Non dolor alias aliquam impedit
+                mollitia aliquid perspiciatis repellendus, cumque velit vel dolore ducimus, officiis veritatis! Neque
+                eligendi animi dolor minus fugiat sed sequi ipsum quia officiis, beatae voluptatem sapiente magni
+                corporis illum maxime hic fugit iste quae? Corporis architecto possimus, eaque autem explicabo obcaecati
+                blanditiis debitis sit libero! Nam soluta doloribus quisquam ad sit incidunt, magni laborum tenetur
+                fugit inventore itaque nostrum reiciendis dolorem placeat omnis vel.</p>
+            <p>Atque rem voluptate maiores rerum ea esse repellendus deserunt reprehenderit eveniet voluptatem non porro
+                aspernatur blanditiis a iusto explicabo neque obcaecati perspiciatis qui, quam molestias! Labore,
+                mollitia dolores atque pariatur dolorem maiores laudantium harum ut ab laboriosam at laborum vel
+                consequuntur, debitis animi commodi consectetur impedit, numquam aspernatur quam tempore eaque
+                voluptatibus obcaecati culpa? Voluptas quod, impedit sapiente molestiae deserunt nemo beatae asperiores
+                fugit laboriosam fuga architecto dolorem qui! Pariatur, facilis laboriosam numquam autem ut aperiam ab
+                quae assumenda nesciunt ducimus, harum, quos odit voluptatum deleniti consectetur eius quo fugit iusto!
+                Quo tempore assumenda enim illum aut, voluptatum accusamus minima accusantium nihil. Obcaecati, minima
+                nostrum? Repellat ipsa voluptas, iure et nam in, deleniti cupiditate recusandae ut, laboriosam odit
+                eaque porro illo? Totam, nisi sequi. Itaque delectus, molestias provident quisquam, minima aliquid
+                tenetur aspernatur, esse nulla cum enim deleniti repudiandae quo veritatis sint minus inventore ipsa
+                aperiam rem tempore impedit ut?</p>
+            <p>Cum alias magnam adipisci quidem, delectus dolore asperiores quo rerum perspiciatis illum accusantium
+                ipsam ipsum impedit, ullam voluptate molestias! Repellendus enim corrupti excepturi neque quas maiores.
+                Consequuntur quis praesentium vero voluptas animi eum quas, illum iusto mollitia cumque quos distinctio
+                molestias quasi nostrum excepturi. Nobis, numquam non. At minima illo excepturi. Itaque placeat nobis ea
+                similique assumenda suscipit soluta facilis, aspernatur odio consectetur aperiam quibusdam, explicabo
+                voluptatem. Amet molestias quia esse sapiente, quis neque laboriosam veniam nulla! A, totam facere?
+                Autem quas dolores aspernatur vel, at commodi, ad voluptatibus perferendis eum quidem, quasi accusantium
+                reiciendis tempore qui placeat doloribus ab repellendus doloremque esse laborum odio ex? Recusandae
+                sequi facere iusto! Mollitia nisi error magni obcaecati illum provident quos sed vitae deserunt repellat
+                harum assumenda adipisci cum pariatur numquam neque, odio iusto quis eligendi vel eaque voluptatum.
+                Omnis doloribus quas et optio aliquid minus enim itaque iure, ad vero? Excepturi, aut.</p>
+        </div>
+        <!-- end content -->
+        <div id="footer">Footer</div>
+        <!-- end footer -->
+    </div>
+
+</body>
+
+</html>

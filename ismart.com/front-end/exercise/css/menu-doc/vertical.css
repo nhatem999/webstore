@@ -1,0 +1,37 @@
+#header{
+   background: #2bbc9b;  
+}
+#header .wp-inner{
+    position: relative;
+}
+#main-menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    padding: 20px 38px 20px;
+    background: #2bbc9b;  
+    border-top: 1px solid #ffffff;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 22px;
+    
+}
+#main-menu{
+    width: 280px;
+    top: 86px;
+    left: 0px;
+    position: absolute;
+  
+}
+.logo{
+    padding: 18px 0px 16.4px;
+    display: block;
+}
+#main-menu li:hover>a{
+    background: #24a085;
+    transition: all 0.25s;
+}
